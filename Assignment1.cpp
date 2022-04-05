@@ -2,12 +2,47 @@
 //
 
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <time.h>
+#include <algorithm>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+const int NUM = 26;
+const string wordlist[NUM] = { "alabama", "choice", "usually",
+"dangerous", "deer", "panda", "love", "health", "exciting",
+"interesting", "administrator", "professional", "manage", "nonce", "onset",
+"typeid", "quarter", "remote", "lovely", "car", "keeper",
+"valid", "where", "mean", "important", "last" };//供游戏的单词库
+
+
+
+int main() {
+    int x;
+    cout << "Welcome to Werdle" << endl;
+    cout << "Select an option" << endl;
+    cout << "1.Play a game" << endl;
+    cout << "2.View statistic" << endl;
+    cout << "3.View help" << endl;
+    cin >> x;
+    while (x == 1)
+    {
+        string first(wordlist[rand() % NUM]);
+        int length = first.length();
+        string player(length, '-');
+
+    }
 }
+void PlayGame() {
 
+}
+void guess() {
+
+}
+void dictionary() {
+
+}
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
 // 调试程序: F5 或调试 >“开始调试”菜单
 
